@@ -19,13 +19,14 @@
 #headerContainer >small{
 font-size: medium;
 font-weight: lighter;
- font-family: Arial, sans-serif;
+ font-family: Arial, sans-serif;  
+
 }
 
 #headerContainer {
 padding: 30px;
 margin: 45px;
-box-shadow: 2px 3px rgba(226, 90, 0, 0.25);
+box-shadow: 2px 3px rgba(23, 19, 16, 0.25);
 text-align: center;
 border-radius: 12px;
 background-color: #ff6600;
@@ -34,7 +35,84 @@ background-color: #ff6600;
 #formContainer {
 padding: 30px;
 margin: 45px;
-box-shadow: 2px 3px rgba(226, 90, 0, 0.25);
-text-align: center;
+box-shadow: 2px 3px rgba(0, 0, 0, 0.25);
 border-radius: 12px;
+background-color: rgb(255, 255, 255);
 }
+
+#formContainer > #StudentForm > .input-field{
+  display:flex;
+  flex-direction: column;
+}
+
+#formContainer > #StudentForm > .input-field > label{
+ width: 1000;
+  flex-direction: column;
+  font-weight: lighter;
+  margin: bottom 5px;;
+
+}
+
+#formContainer > #StudentForm > .input-field > input{
+ border: 2px solid #000000;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 5px 10px;
+
+}
+
+#formContainer > #StudentForm:nth-last-child(1) > button{
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding:10px;
+    border: 2px solid #ff6600;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+#listContainer > .list-item {
+  box-shadow: 2px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  margin: 30px;
+  padding: 30px;
+}
+
+#listContainer > .list-item > h2{
+ margin-top: 10px;
+ font-weight: bold;
+
+}
+
+#listContainer > .list-item > p{
+  color: #000000;
+}
+
+#listContainer > .list-item > button{
+padding: 10px;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #ff6600;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#listContainer{
+  display: flex;
+  grid-template-columns:repeat(12, 1fr);
+}
+
+@media (width <= 320px){
+  #listContainer {
+    display: flex;
+    flex-direction: column;}
+  }
+      
+
+  
+ 
+
+ 
