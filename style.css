@@ -62,7 +62,7 @@ background-color: rgb(255, 255, 255);
 }
 
 #formContainer > #StudentForm:nth-last-child(1) > button{
-  background-color: #ffffff;
+  background-color: #ff6600;
   color: #000000;
   border: none;
   padding:10px;
@@ -71,6 +71,7 @@ background-color: rgb(255, 255, 255);
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   font-weight: bold;
+  margin-top: 10px;
 }
 
 #listContainer > .list-item {
@@ -94,9 +95,9 @@ background-color: rgb(255, 255, 255);
 #listContainer > .list-item > button{
 padding: 10px;
   border-radius: 25px;
-  background-color: rgb(255, 255, 255);
+  background-color: #ff6600;
   border: 2px solid #ff6600;
-  margin-top: 10px;
+  margin-top: 15px;
   font-weight: bold;
 }
 
@@ -111,8 +112,23 @@ padding: 10px;
     flex-direction: column;}
   }
       
-
+@media (width <= 1000px){
+  #listContainer {
+    display: flex;
+    flex-direction: column;}
+  }
   
- 
+ @media (width <= 600px){
+  #listContainer {
+    display: flex;
+    flex-direction: column;}
+  }
+
+ #listContainer > .list-item > button:hover{
+  background-color: #000000;
+  color: #ff6600;
+  border: 2px solid #ff6600;
+  transition: all 0.3s ease;
+ }
 
  
